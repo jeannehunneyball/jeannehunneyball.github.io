@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blog">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeanne Hunneyball - Blog</title>
+    <meta name="Jeanne Hunneyball" content="personal">
+    <meta name="description" content="blog">
+    <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+    <link href="css/style3.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <!--keep everything inside a container so we can change the layout for mobile easily-->
+    <div id="container">
+
+    <aside id="sidebar">
+        <!--another container for layout purposes-->
+        <div class="flex">
+            
+            <div id="icon">
+                <!--replace this with the page url so people can refresh the page easily... at least that's what i always click on people's icons to do.-->
+                <a href="#">
+                    <img src="images/icon.jpg" alt="Jeanne Hunneyball">
+                </a>
+            </div>
+            
+            <section id="profile">
+                <h1>
+                <!--same here, link to your page (if you want)-->
+                    <a href="#">Jeanne's Blog</a>
+                </h1>
+                <!--the first line of your profile~ describe yourself in one sentence or something-->
+                <p>Game designer, narrative designer, and developer. This blog is where I write about games, development, media, and the occasional unrelated obsession.</p>
+                
+                <div id="bio">
+                    <p>Jeanne Hunneyball</p>
+                    <p>pronouns: she/her</p>
+                    <p>age: 33</p>
+                </div>
+            </section>
+        </div>
+        
+        <!--add links to other pages on your site, or other sites you're on!-->
+        <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="games.html">games</a></li>
+            <li><a href="grades.html">grades</a></li>
+            <li><a href="devlog.html">devlog</a></li>
+        </ul>
+        </nav>
+
+        <!--i made it so the stamps section here only shows up on desktop-->
+        <section id="stamps" class="center pc-only">
+            <p><a target="_blank" href="https://bernadinesweetspot.neocities.org/"><img src="images/bernigif.gif" alt="site button"></a></p>
+            <p><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-83528-1a"><img alt="Guestbook" border="0" src="http://extras4.smartgb.com/b/gb_80x40.gif" width="80" height="40"></a></p>
+        </section>
+    
+    </aside>
+    
+    <!--now for the POSTS! the "tagged" class makes sure the tag filters do what they're supposed to-->
+    <main class="tagged">
+        
+        <!--first is a deviantart inspired "current status" section where you can list things you're currently up to-->
+        <section id="status" class="pinned">
+            <!--remove the "open" part to have this closed by default-->
+            <details open>
+                <!--i like to include a last updated date for this part-->
+                <summary>status <time>06/06/2026</time></summary>
+                <ul>
+                    <!--i don't think this is reeeally how you're supposed to use html lists, but we're just having fun here so it's ok-->
+                    <li>reading:</li>
+                    <li><a href="https://galacticjourney.org/stories/I_Have_No_Mouth_and_I_Must_Scream_-_Harlan_Ellison.pdf" target="_blank">i have no mouth and i must scream | harlan ellison</a></li>
+                    
+                    <li>listening to:</li>
+                    <li><a href="https://music.youtube.com/watch?v=0cBHeagy-S4&si=aNHjWwG1UrjbJV8y" target="_blank">the one who's running the show | GLITCH</a></li>
+                    
+                    <li>playing:</li>
+                    <li><a href="https://store.steampowered.com/app/2201320/Date_Everything/" target="_blank">date everything</a></li>
+                </ul>
+            </details>
+        </section>
+        
+        <section id="tag-filters" class="pinned">
+            <details open>
+                <summary>tag filters</summary>
+                <!--when you add new tags here, make sure to add them to your css as well so that the filters will work properly. careful not to make any typos...!-->
+                <label><input type="radio" id="all" name="tag" checked>all</label>
+                <label><input type="radio" id="intro" name="tag">#intro</label>
+                <label><input type="radio" id="personal" name="tag">#personal</label>
+                <label><input type="radio" id="art" name="tag">#art</label>
+                <label><input type="radio" id="secret" name="tag">#secret</label>
+            </details>
+        </section>
+        
+<!--BEGIN POSTING!!!!!!!!-->
+        
+        <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
+        <article class="post intro">
+            <!--you can put your name at the top here, using a fake social media handle or just typing it normally. up to you!-->
+            <div class="post-header">@jeannehunneyball <time>06/06/2026, 20:17</time></div>
+            <!--remember to change the timestamp... i always forget to lol....-->
+            
+            <h2>hi there</h2>
+            <p>i'm happy to introduce you to my brand new fantastic blog!</p>
+            <h3>things i'm likely to blog about</h3>
+            <ul>
+                <li>games news</li>
+                <li>reviews</li>
+                <li>interesting sites i find (check out my <a href=links.html>links!)</a></li>
+            </ul>
+            <p>I'll have a more professional devlog over <a href=devlog.html>here</a></p>
+            
+            <section class="tags">
+                <!--the tag section is optional, and you should put each tag inside of an <a> or <span> element! (that way they get styled correctly...)-->
+                <a href="#intro">#introduction</a>
+                <!--using an id you made a tag for above will make it scroll up to the tag filter section so people can filter posts that way!-->
+            </section>
+        </article>
+        
+    </main>
+
+    <footer>
+        © 2026 Jeanne Hunneyball
+    </footer>      
+    </div>
+  </body>
+</html>

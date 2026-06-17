@@ -1,0 +1,373 @@
+/* =========================
+   ROOT (SHARED DESIGN SYSTEM)
+   ========================= */
+
+:root {
+  --site-bg: #111827;
+
+  --post-bg: #1F2937;
+  --post-text: #F9FAFB;
+
+  --border-color: #374151;
+  --border-shadow: rgba(0,0,0,.2);
+
+  --sidebar-text: #F9FAFB;
+  --sidebar-bg: #1F2937;
+
+  --button-bg: #273449;
+  --button-bg-hover: #D4A373;
+  --button-bg-selected: #D4A373;
+
+  --button-text: #111827;
+  --button-border-color: #374151;
+
+  --selected-bg: #D4A373;
+  --selected-text: #111827;
+
+  --font-body: "Segoe UI", system-ui, sans-serif;
+  --font-display: "Nunito", Verdana, Tahoma, sans-serif;
+  --font-alt: "Atkinson Hyperlegible", Verdana, Tahoma, sans-serif;
+
+  --radius: 12px;
+}
+
+/* =========================
+   THEMES (ONLY DIFFERENCES)
+   ========================= */
+
+:root[data-theme="blog"] {
+  --post-header-text: #D4A373;
+  --accent: #D4A373;
+
+  --list-style: "★ ";
+  --list-image: url("images/star.png");
+
+  --post-border-accent: var(--border-color);
+  --timestamp-color: var(--post-text);
+}
+
+:root[data-theme="devlog"] {
+  --post-header-text: #D4A373;
+  --accent: #7FA6C9;
+
+  --list-style: disc;
+  --list-image: none;
+
+  --post-border-accent: var(--accent);
+  --timestamp-color: var(--accent);
+}
+
+/* =========================
+   FONTS
+   ========================= */
+
+@font-face {
+  font-family: Nunito;
+  src: url('/fonts/Nunito-Black.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Atkinson Hyperlegible;
+  src: url('/fonts/AtkinsonHyperlegible-Regular.ttf');
+}
+
+@font-face {
+  font-family: Atkinson Hyperlegible;
+  src: url('/fonts/AtkinsonHyperlegible-Bold.ttf');
+  font-weight: bold;
+}
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+html { scroll-behavior: smooth; }
+
+::selection {
+  background: var(--selected-bg);
+  color: var(--selected-text);
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: var(--border-color) var(--post-bg);
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6em;
+  background: var(--site-bg);
+  color: var(--post-text);
+  background-attachment: fixed;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1,
+nav,
+.pinned summary {
+  font-family: var(--font-display);
+  font-weight: bold;
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+
+.center { text-align: center; }
+.small-text { font-size: smaller; }
+.no-border { border: none; padding: 0; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+#container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+main {
+  width: 600px;
+  position: absolute;
+  margin-left: 300px;
+}
+
+#sidebar {
+  width: 240px;
+  margin-left: 20px;
+  padding: 2em 1em;
+
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px var(--border-shadow);
+
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+#sidebar a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+}
+
+#sidebar h1 {
+  margin-block: 1em;
+}
+
+#sidebar h1 a {
+  font-size: 1.2em;
+}
+
+/* ICON */
+#icon { margin: auto; }
+
+#icon img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+#icon a img {
+  outline: 2px solid transparent;
+  transition: .2s;
+}
+
+#icon a img:hover {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* NAV BUTTONS */
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-evenly;
+}
+
+#sidebar nav li a {
+  min-width: 120px;
+  display: inline-block;
+  padding: .5em .8em;
+
+  background: var(--button-bg);
+  color: var(--button-text);
+
+  border-radius: 1rem;
+  transition: .2s;
+  font-weight: bold;
+}
+
+#sidebar nav li a:hover {
+  background: var(--button-bg-hover);
+  color: var(--button-text);
+}
+
+/* =========================
+   PINNED / STATUS
+   ========================= */
+
+.pinned {
+  background: var(--button-bg);
+  padding: .75em;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.pinned summary {
+  font-size: 1.2em;
+}
+
+/* =========================
+   POSTS
+   ========================= */
+
+.post {
+  background: var(--post-bg);
+  color: var(--post-text);
+
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--post-border-accent);
+
+  border-radius: var(--radius);
+  padding: .8rem;
+  margin-bottom: 1em;
+
+  box-shadow: 0 4px 12px var(--border-shadow);
+}
+
+.post-header {
+  color: var(--post-header-text);
+  font-weight: bold;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: .5rem;
+}
+
+.post time {
+  float: right;
+  font-size: smaller;
+  color: var(--timestamp-color);
+}
+
+.post img {
+  max-width: 100%;
+}
+
+/* =========================
+   LIST STYLE (THEME SWITCH)
+   ========================= */
+
+.post li {
+  list-style-type: var(--list-style);
+  list-style-image: var(--list-image);
+}
+
+/* =========================
+   TAGS
+   ========================= */
+
+.tags {
+  border-top: 2px dashed var(--border-color);
+  padding: .4em 0;
+}
+
+.tags a {
+  color: var(--post-text);
+  text-decoration: none;
+}
+
+.tags span {
+  color: var(--accent);
+}
+
+/* =========================
+   TAG FILTERS
+   ========================= */
+
+#tag-filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  background: var(--button-bg);
+  border: 1px solid var(--button-border-color);
+
+  border-radius: .5em;
+  padding: .2em .8em;
+}
+
+#tag-filters input {
+  appearance: none;
+}
+
+/* =========================
+   READ MORE
+   ========================= */
+
+.readmore summary {
+  font-weight: bold;
+  color: var(--post-header-text);
+  cursor: pointer;
+}
+
+.readmore[open] > summary {
+  display: none;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  position: fixed;
+  bottom: 4px;
+  width: 236px;
+  margin-left: 22px;
+
+  text-align: center;
+  font-size: small;
+
+  color: var(--sidebar-text);
+  opacity: .6;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+  #sidebar,
+  main {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    position: static;
+    opacity: 1;
+    width: 100%;
+  }
+}
