@@ -4,78 +4,165 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jeanne Hunneyball - Professional Portfolio</title>
+        <title>Jeanne Hunneyball - Home</title>
         <meta name="author" content="Jeanne Hunneyball">
-        <meta name="description" content="Professional Portfolio">
+        <meta name="description" content="Home">
         <link rel="icon" type="image/x-icon" href="images/icon.jpg">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     </head>
 
     <body>
         
-    <header>
-        <h1>Jeanne Hunneyball</h1>
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <div class="header-main">
+
+                <a href="index.html" class="site-title">
+                    Jeanne Hunneyball
+                </a>
+
+                <nav class="site-nav">
+
+                    <div class="nav-inner">
+
+                        <ul>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="devlog.html">Devlog</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+
     </header>
-        
-    <nav>
-        <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
         
     <div id="content">
         
     <div id="sidebar">
-        <div id="avatar">
-            <img src="images/icon.jpg" alt="Jeanne Hunneyball">
+
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img
+                    src="images/logohex.png"
+                    alt="Jeanne Hunneyball logo"
+                >
+            </a>
         </div>
-        
-        <div id="bio">
-        <h3>Bio</h3>
+
+        <h3>Games Designer</h3>
+
         <p>
-        Game Designer<br>
-        Narrative Designer<br>
-        Developer
+            Narrative design<br>
+            Gameplay systems<br>
+            Player choice
         </p>
 
-        <h3>Focus</h3>
-        <p>
-        Narrative-driven games, interactive storytelling, gameplay systems.
-        </p>
-        </div>
-        
-        <h3>Projects</h3>
-        <ul>
-            <li><a href="reel-feelings.html">Reel Feelings!</a></li>
-            <li><a href="koa-the-lost-realms.html">Koa: The Lost Realms</a></li>
-            <li><a href="shrimpyscroller.html">Shrimpyscroller</a></li>
-            <li><a href="some-postman.html">Some Postman</a></li>
-        </ul>
+        <h3>Tools</h3>
+            <ul>
+                <li>Ren'Py</li>
+                <li>Python</li>
+                <li>Twine</li>
+                <li>Unity</li>
+                <li>Git</li>
+            </ul>
+
+        <h3>Open to</h3>
+            <p>
+                Graduate and junior game design opportunities.
+            </p>
 
         <div class="social-links">
-        <h3>Social Media</h3>
-        <a href="https://www.linkedin.com/in/jeanne-hunneyball-9663741a3/" target="_blank">
-        <img src="images/LinkedIn_icon.svg" alt="LinkedIn Profile"></a>
+            <a href="https://www.linkedin.com/in/jeanne-hunneyball-9663741a3" target="_blank">
+                <img src="images/icon-linkedin.png" alt="LinkedIn Profile">
+            </a>
+            <a href="https://bsky.app/profile/jeannehunneyball.bsky.social" target="_blank">
+                <img src="images/icon-bluesky.png" alt="Bluesky Profile">
+            </a>
+            <a href="https://github.com/jeannehunneyball" target="_blank">
+                <img src="images/icon-github.png" alt="GitHub Profile">
+            </a>
+            <a href="https://jeannehunneyball.itch.io" target="_blank">
+                <img src="images/icon-itchio.svg" alt="Itch io Page">
+            </a>
+
         </div>
-        
+
     </div>   
         
     <main>
-        <div class="prose">
+        <div class="page-content">
         
-        <h1>Jeanne Hunneyball</h1>
-        <h2>Game Designer | Narrative Designer | Developer</h2>
-        <p>Portfolio of game development, narrative design, and interactive media projects.</p>
-        
-        <h3><a href="home.html">Enter Portfolio</a></h3>
-        <h4><a href="games.html">Featured Projects</a></h4>  
-        
+        <section class="hero">
+
+            <h1>
+                Designer<br>
+                Developer<br>
+                Narrative
+            </h1>
+            <br>
+            <h2>Designing games where story and play work together.</h2>
+            <p>I'm a game designer and developer interested in the space between narrative and gameplay - creating characters, choices and systems that give players a reason to care about what happens next.</p>
+
+            <p>My work combines narrative design, gameplay systems and hands-on implementation, with a particular focus on player choice, character-driven experiences and mechanics that support the story rather than simply sit alongside it.</p>
+            
+        </section>
+
+        <section class="featured-project">
+
+            <h2>Featured Project</h2>
+
+            <img
+                class="featured-image"
+                src="images/reel-feelings-homepage.jpg"
+                alt="Gameplay screenshot from Reel Feelings! showing dialogue and the fishing minigame.">
+
+            <div class="featured-project-info">
+
+                <h3>Reel Feelings!</h3>
+
+                <p>
+                    A six-day visual novel about relationships, secrets and the things we choose to believe. Players get to know three unusual characters through branching conversations, while an original fishing minigame adds another layer to exploration, pacing and worldbuilding.
+                </p>
+
+                <p>
+                    Developed as a solo project, Reel Feelings! combines narrative design, gameplay systems and technical implementation in Ren'Py, with the fishing minigame developed in Python and Pygame.
+                </p>
+
+                <p class="project-meta">
+                    <strong>Role:</strong><br>
+                    Game Designer, Narrative Designer, Programmer
+                </p>
+
+                <p class="project-meta">
+                    <strong>Highlights:</strong>
+                </p>
+                
+                <ul>
+                    <li>Branching character routes and multiple endings</li>
+                    <li>Relationship and player-choice systems</li>
+                    <li>Original fishing minigame built with Python/Pygame</li>
+                    <li>Integrated gameplay systems into Ren'Py</li> </ul>
+
+                <a href="reel-feelings.html">View Case Study →</a>
+                <a href="games.html">See More Games →</a>
+
+            </div>
+
+        </section>
+    
     </main>
     </div>
     <footer>© 2026 - Jeanne Hunneyball</footer>
     </body>
 </html>
+>

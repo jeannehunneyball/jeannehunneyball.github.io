@@ -26,9 +26,9 @@
                 <h1>
                     <a href="#">Devlog</a>
                 </h1>
-                <p>Game Design</p>
-                <p>Narrative Design</p>
-                <p>Production</p>
+                <p>Designer</p>
+                <p>Developer</p>
+                <p>Narrative</p>
                 
                 <div id="bio">
                     <p>Jeanne Hunneyball</p>
@@ -40,38 +40,34 @@
         
         <nav>
         <ul>
-            <li><a href="home.html">home</a></li>
-            <li><a href="about.html">about</a></li>
+            <li><a href="index.html">home</a></li>
             <li><a href="games.html">games</a></li>
-            <li><a href="grades.html">grades</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="education.html">grades</a></li>
             <li><a href="blog.html">blog</a></li>
         </ul>
         </nav>
-
-        <section id="stamps" class="center pc-only">
-            <a target="_blank" href="https://bernadinesweetspot.neocities.org/">
-            <img src="images/bernigif.gif" alt="site button"></a>
-        </section>
         
     </aside>
     
     <main class="tagged">
         
+        <!--first is a deviantart inspired "current status" section where you can list things you're currently up to-->
         <section id="status" class="pinned">
+            <!--remove the "open" part to have this closed by default-->
             <details open>
-                <summary>Resources<time>06/06/2026</time></summary>
+                <!--i like to include a last updated date for this part-->
+                <summary>status <time>31/08/2026</time></summary>
                 <ul>
-                    <li>Confluence:</li>
-                    <li><a href="https://jeannehunneyballbcu.atlassian.net/wiki/spaces/SM/overview" target="_blank">Homepage</a></li>
+                    <!--i don't think this is reeeally how you're supposed to use html lists, but we're just having fun here so it's ok-->
+                    <li>reading:</li>
+                    <li><a href="https://www.goodreads.com/en/book/show/6088007-neuromancer" target="_blank">neuromancer | william gibson</a></li>
                     
-                    <li>Jira:</li>
-                    <li><a href="https://jeannehunneyballbcu.atlassian.net/jira/software/projects/SM/boards/36/timeline" target="_blank">Timeline</a> | <a href="https://jeannehunneyballbcu.atlassian.net/jira/software/projects/SM/boards/36/timeline" target="_blank">Kanban Board</a></li>
+                    <li>listening to:</li>
+                    <li><a href="https://music.youtube.com/watch?v=0cBHeagy-S4&si=aNHjWwG1UrjbJV8y" target="_blank">ocean module 7 | dreamfibre</a></li>
                     
-                    <li>Trello:</li>
-                    <li><a href="https://trello.com/b/mwdky5UV/summer-module" target="_blank">Kanban Board</a></li>
-
-                    <li>Notion:</li>
-                    <li><a href="https://www.notion.so/32fc8ef259a380a38aafde014a688d1e?v=32fc8ef259a3807c938d000ca5ea90c8" target="_blank">Database & Templates</a></li>
+                    <li>playing:</li>
+                    <li><a href="https://store.steampowered.com/app/960090/Bloons_TD_6" target="_blank">bloons td6 | steam</a></li>
                 </ul>
             </details>
         </section>
@@ -97,318 +93,21 @@
 <!--BEGIN POSTING!!!!!!!!-->
         
         <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
-            <article class="post secret">
-            <div class="post-header">@jeannehunneyball <time>25/04/2026, 1:32am</time></div>
-            <h1>Playtesting links!</h1>
-            
-            <details class="readmore">
-                <summary>read more</summary>
-
-                <p>Do you want to help me out with <a href="playtesting.html">playtesting</a>?</p>
-                <p>Check out these links!</p>
-                <ul>
-                    <li><a href="Roselyn_Suwan_prototype.html">Date Roselyn!</a></li>
-                    <li><a href="Molly_May_prototype.html">Date Molly!</a></li>
-                    <li><a href="Mitchell_Cawley_prototype.html">Date Mitchell!</a></li>
-                </ul>
-                <p>You can give me feedback here:</p>
-                <ul>
-                    <li><a href="https://forms.gle/By9tF8NtFaXE7r7P7" target="_blank" rel="noopener noreferrer">Google Forms</a></li>
-                    <li><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-83528-1a" target="_blank" rel="noopener noreferrer">Guest Book</a></li>
-                </ul>
-                <p>Let me know what y'all think!</p>
-                
-            </details>
-            
-            <section class="tags">
-                <a href="#secret">#secret</a>
-            </section>
-        </article>
-        
-        <article class="post production">
-            <div class="post-header">@jeannehunneyball <time>14/04/2026, 10:16pm</time></div>
-            <h1>First tutorial after Easter</h1>
-
-            <p>After a nice holiday break, I caught Sion up with my progress on my refined twine prototypes and my second iteration of my fishing mini-game.</p>
-            <p>He assured me it's absolutely fine to be starting my new versions from scratch, as I may be adding mechanics or cutting features, and starting over in a clean file can help prevent issues that come with spaghetti code.</p>
-            <p>I am also finding even though I may restart a prototype, with every iteration I am finding myself becoming faster and more proficient because I am familiarising myself with good python practices, rather than trying to hack an outdated method I implemented back when my variables and mechanics were different.</p>
-            <p>I will continue to work on my fishing game first, and look at getting just one full route ready for the end of the week.</p>
-            
-            <section class="tags">
-                <a href="#production">#production</a>
-            </section>
-        </article>
-        
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>10/04/2026, 4:37pm</time></div>
-            <h1>Visual novel background ideation</h1>
-
-            <p>I've been really struggling to find any sort of decent visual novel background assets to use in my game.</p>
-            <p>I've been pondering on making my own backgrounds by taking photographs of local beach towns (aberystwyth comes to my mind~)</p>
-            <p>I have a canon sure shot 120 classic 35mm point and shoot, a halina flashmatic stb tele 110 toy camera, and a zeiss ikon contessamatic e 35mm rangefinder camera.</p>
-            <p>I'm hoping with some experimentation, some practice, and some gorgeous locations, i could get some creative background for my game whilst flexing my old photography muscles (that haven't stretched since 2011 haha!)</p>
-            
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-        </article>
-        
-        <article class="post design">
-            <div class="post-header">@jeannehunneyball <time>03/04/2026, 10:06pm</time></div>
-            <h1>Further ventures into twine</h1>
-
-            <p>This week, I have been refining my initial prototype in Twine to define situations and choices that will be relevant to each characters narrative arc. I have screencapped my progress below:</p>
-            <p><img src="images/twine_prototype_maris.png"></p>
-            <p><img src="images/twine_prototype_mason.png"></p>
-            <p><img src="images/twine_prototype_nerina.png"></p>
-            <p>I'll continue to develop and iterate on this structure to add more depth and discomfort for my narrative choices.</p>
-            
-            <section class="tags">
-                <a href="#design">#design</a>
-            </section>
-        </article>
-
-        <article class="post music">
-            <div class="post-header">@jeannehunneyball <time>01/04/2026, 11:55pm</time></div>
-            <h1>Potential sound effects and/or instruments:</h1>
-
-            <p>As I haven't heard back from Chandra, and would like to have a backup plan for if I can't get a musician to conduct my music, I have managed to snag myself a Stylophone, as well as claimed a bunch of percussive musical instruments from my parents house</p>
-            <p>They include a cuban guiro, mexican maracas, a balkan dvojnice, a tibetan singing bowl, a (not intentially) headless tambourine, a pocket pal harmonica, an unbranded melodica AND two ocarinas (one celtic, one peruvian).</p>
-            <p><img src="images/stylophone.png"></p>
-            <p>I'll need to drop him a message, but if he isn't able to commit, i have plenty of tools to make a convincingly enthusiastic visual novel dating simulator soundtrack!</p>
-            
-            <section class="tags">
-                <a href="#music">#music</a>
-            </section>
-        </article>
-        
-        <article class="post design">
-            <div class="post-header">@jeannehunneyball <time>27/03/2026, 9:13pm</time></div>
-            <h1>Beach town worldbuilding</h1>
-
-            <p>I have spent today working on making a pseudo-wikipedia entry for the location settings lore on my neocities site.</p>
-            <p>You can read more about <i>[insert some sort of town name here this is a placeholder]</i> <a href="https://bernadinesweetspot.neocities.org/wiki_beachtown">here</a>!</p>
-            
-            <section class="tags">
-                <a href="#design">#design</a>
-            </section>
-        </article>
-
-        <article class="post secret">
-            <div class="post-header">@jeannehunneyball <time>25/03/2026, 10:28pm</time></div>
-            <h1>Betta fish final design reveal:</h1>
-
-            <details class="readmore">
-                <summary>read more</summary>
-                
-                <img src="images/wiki_portrait1_1.png" alt="Betta fish final design (grey shirt), by Alex Ward" loading="lazy">
-                <img src="images/wiki_portrait1_2.png" alt="Betta fish final design (long sleeve), by Alex Ward" loading="lazy">
-                <img src="images/wiki_portrait1_3.png" alt="Betta fish final design (pink shirt), by Alex Ward" loading="lazy">
-                <p><a href="https://bernadinesweetspot.neocities.org/wiki_fish1">Roselyn Suwan</a>, everybody!</p>
-                
-            </details>
-            
-            <section class="tags">
-                <a href="#secret">#secret</a>
-            </section>
-            
-        </article>
-        
-        <article class="post secret">
-            <div class="post-header">@jeannehunneyball <time>25/03/2026, 10:27pm</time></div>
-            <h1>Blob fish final design reveal:</h1>
-            
-            <details class="readmore">
-                <summary>read more</summary>
-                
-                <img src="images/wiki_portrait2_1.png" alt="Blob fish pressurised design, by Alex Ward" loading="lazy">
-                <img src="images/wiki_portrait2_2.png" alt="Blob fish depressurised design, by Alex Ward" loading="lazy">
-                <p><a href="https://bernadinesweetspot.neocities.org/wiki_fish2">Mitchell Cawley</a>, everybody!</p>
-                
-            </details>
-            
-            <section class="tags">
-                <a href="#secret">#secret</a>
-            </section>
-            
-        </article>
-        
-        <article class="post secret">
-            <div class="post-header">@jeannehunneyball <time>25/03/2026, 10:26pm</time></div>
-            <h1>Goldfish final design reveal:</h1>
-            
-            <details class="readmore">
-                <summary>read more</summary>
-                
-                <img src="images/wiki_portrait3.png" alt="Goldfish final design, by Alex Ward" loading="lazy">
-                <p><a href="https://bernadinesweetspot.neocities.org/wiki_fish3">Molly May</a>, everybody!</p>
-                
-            </details>
-            
-            <section class="tags">
-                <a href="#secret">#secret</a>
-            </section>
-            
-        </article>
-        
-        <article class="post production">
-            <div class="post-header">@jeannehunneyball <time>24/03/2026, 11:36am</time></div>
-            
-            <h1>Tutorials</h1>
-            <p>Today I presented my concept proposal PowerPoint to Sion via MS Teams. I was nervous, but it was a total success! I have been provisionally greenlit for this module, so now I feel <s>less guilty</s> more confident working on the worldbuilding, narrative and character arcs for my game!</p>
-            <h3>what next?</h3>
-            <p>I will be:</p>
-            <ul>
-                <li>making wikipedia entries for each character</li>
-                <li>expanding my seaside town's lore</li>
-                <li>working on my two prototypes</li>
-                <li>learning python/Ren'Py</li>
-            </ul>
-            <p>I also received confirmation that Alex has finalised my designs, so stay tuned for the secret reveals!</p>
-            
-            <section class="tags">
-                <a href="#production">#production</a>
-            </section>
-        </article>
-        
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>19/03/2026, 11:15am</time></div>
-            
-            <h1>Goldfish outfit concepts</h1>
-            <p><a href="https://www.artstation.com/percivale">Alex</a> and I revisited the first character she'd concepted, and since I'd had time to explore her character traits, I decided I wanted this character to be a goldfish who can't forget. This would tie nicely into my subversion pillar, and I referenced outfit inspirations from characters like Velma.</p>
-            <img src="images/wiki_concepts3_1.jpg" alt="Goldfish art concepts, by Alex Ward">
-            <p>3 and 4 were my favourites here, so I asked if we could continue down that route. I liked having green to contrast the orange, even though Velma is known for her orange sweaters!</p>
-            <img src="images/wiki_concepts3_2.jpg" alt="Goldfish outfit concepts, by Alex Ward">
-            <p>I was presented with a bunch of new options, as well as combos that mashed 3 and 4's outfits together, and I knew instantly I was drawn to 12. I loved the braces, the comfy green sweater vibe, and even though Velma's turtleneck is iconic, I think a v-neck shirt really suits this character.</p>
-            <img src="images/wiki_concepts3_3.jpg" alt="Goldfish outfit concepts, by Alex Ward">
-            <p>With all my outfits confirmed, I just had to wait a little longer more for these concepts to be upscaled, polished and then turned into final designs.</p>
-
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-        </article>
-        
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>18/03/2026, 5:59pm</time></div>
-            
-            <h1>Blob fish concepts</h1>
-            <p>So my second character I wanted to be a a blob fish, which revealed hidden scope I hadn't considered. I had asked <a href="https://www.artstation.com/percivale">Alex</a> for one character sprite, but because I wanted pressurised/depressurised versions of this character it ended up being two sprites!</p>
-            <img src="images/wiki_concepts2_2.jpg" alt="Blob fish art concepts, by Alex Ward">
-            <p>I wanted him to be defined whilst pressurised, and not exactly fat but more a dad bod type shape language to show how fish can often feel "out of water.</p>
-            <img src="images/wiki_concepts2_3.jpg" alt="Blob fish outfit concepts, by Alex Ward">
-            <p>Outfit wise I wanted to keep it simple, tank top and shorts, that change their fit with the change of his physique.</p>
-            <p>I also wanted shorts to show off the colours on his legs - the interesting graphic/watercolour styles are beautiful and I didn't want to lose too many of these super cute details.</p>
-
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-        </article>
-        
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>17/03/2026, 1:15pm</time></div>
-            
-            <h1>Betta fish outfit concepts</h1>
-            <p>I got some more updates for my betta fish character from <a href="https://www.artstation.com/percivale">Alex</a> today, showing how the outfits would look on a more piscine body type:</p>
-            <img src="images/wiki_concepts1_2.jpg" alt="Betta fish outfit concepts, by Alex Ward">
-            <p>After exploring the previous options 2 and 5, Alex returned with a new wave of outfits to choose from:</p>
-            <img src="images/wiki_concepts1_4.jpg" alt="Betta fish outfit concepts, by Alex Ward">
-            <p>I was trying to whittle it down to a singular favourite, but it was just too darn difficult! I was a bit cheeky, and asked for final versions of 2, 3 and 6:</p>
-            <img src="images/wiki_concepts1_5.jpg" alt="Betta fish outfit concepts, by Alex Ward">
-            <p>And if anyone is going to have multiple outfits... it HAS to be the fashionista!</p>
-            <p>Hopefully I'll be getting some concepts for my masculine character tomorrow...</p>
-
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-        </article>
-        
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>13/03/2026, 4:10pm</time></div>
-            
-            <h1>Betta fish colour concepts</h1>
-            <p><a href="https://www.artstation.com/percivale">Alex</a> showed me some of her designs based on a betta fish, and gave me 4 options to choose from:</p>
-            <img src="images/wiki_concepts1_1.jpg" alt="Betta fish art concepts, by Alex Ward">
-            <p>I liked the colours of both the pink and purple betta, but proceeded to choose the pink fish as I felt it better suited the sweet "finfluencer" personality I had thought for this character.</p>
-            <p>With that in mind, she sent a variety of outfits that were fashionable and influencer coded using the pink colour palette:</p>
-            <img src="images/wiki_concepts1_3.jpg" alt="Betta fish outfit concepts, by Alex Ward">
-            <p>Whilst I had initially decided against having outfits, I think it adds a lot of personality and could segue into other aspects of worldbuilding, such as fashion companies having to expand their clothing lines to be "gill-friendly". I also like the jeans being reminiscent of the blue tips of the original concept's fins.</p>
-
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-
-        </article>
-        
-        <article class="post music">
-            <div class="post-header">@jeannehunneyball <time>02/02/2026, 11:21pm</time></div>
-            <h1>Music inquisitions</h1>
-
-            <p>I've gotten in touch with a musician from my early 20's who is known for percussion, electro swing, and lo-fi beats. I approached him with my vibe and feels for the game I'd like to produce, asking if he would be willing to attempt a soundtrack for this production! He has preliminarily said yes, and I've sent him some <a href="https://jeannehunneyballbcu.atlassian.net/wiki/spaces/SM/pages/112459900/Audio+Atmosphere+Direction">details</a> about my game's style and some notes on the tone I'd like him to go for.</p>
-            <p><img src="images/musicnotes_chandra.png"></p>
-            <p>I can't wait to get in touch with him again to see what he feels!!</p>
-            
-            <section class="tags">
-                <a href="#music">#music</a>
-            </section>
-
-        </article>
-
-        <article class="post design">
-            <div class="post-header">@jeannehunneyball <time>01/02/2026, 9:20pm</time></div>
-            <h1>Twine Prototype Development</h1>
-
-            <p>I have spent some time trying to get a rough structure for my twine prototype in order to present to Sion next month.</p>
-            <p><img src="images/twine_prototype1.png"></p>
-            <p>This will be the basis for my vertical slices for dates with all three of my characters!</p>
-            
-            <section class="tags">
-                <a href="#code">#code</a>
-            </section>
-
-        </article>
-
-                <article class="post code">
-            <div class="post-header">@jeannehunneyball <time>01/30/2026, 8:50pm</time></div>
-            <h1>Pygame Prototype + Experimentation</h1>
-
-            <p>I have spent some time trying to get a rough structure for my pygame prototype to include in my presentation.</p>
-            <p><img src="images/pygame_prototype1.png"></p>
-            <p>This will be the basis for my simple fishing mechanic that will use environmental storytelling to increase the players pollution awareness stat, completely optional but included for extra easter egg content!</p>
-            
-            <section class="tags">
-                <a href="#code">#code</a>
-            </section>
-        </article>
-
-        <article class="post art">
-            <div class="post-header">@jeannehunneyball <time>22/01/2026, 10:44pm</time></div>
-            
-            <h1>Character concept proposals</h1>
-            <p>Today I got in touch with <a href="https://www.artstation.com/percivale">Alex</a>, a BCU student on the BA Video Game Digital Art course, in regards to commissioning a set of reverse mermaid character sprites for my visual novel idea.</p>
-            <p>I proposed 2-3 characters with 5 various expressions in the style of <a href="https://justinparpan.tumblr.com/" target="_blank">Justin Parpan</a> and with that brief, this is what they conjured up:</p>
-            <img src="images/wiki_concepts3.jpg" alt="Goldfish art concepts, by Alex Ward">
-            <p>I'm excited to see what other designs they will come up with!</p>
-
-            <section class="tags">
-                <a href="#art">#art</a>
-            </section>
-        </article>
         
         <article class="post intro">
-            <div class="post-header">@jeannehunneyball <time>17/01/2026, 11:34pm</time></div>
+            <div class="post-header">@jeannehunneyball <time>31/08/2026, 2:34pm</time></div>
             
             <h1>Hello World!</h1>
-            <p>This my my devlog for documenting my process of design in modules 10 and 11 of BA Video Game Design.</p>
+            <p>This my my devlog.</p>
             <h3>what to expect</h3>
             <p>I will be posting content about:</p>
             <ul>
-                <li>my research journey</li>
-                <li>my ideation process</li>
-                <li>my design philosophies</li>
-                <li>my foray into coding in python/Ren'Py</li>
+                <li>processes of design</li>
+                <li>development updates</li>
+                <li>design philosophies</li>
                 <li>artistic inspirations</li>
+                <li>post-mortems</li>
             </ul>
-            <p></p>
             
             <section class="tags">
                 <a href="#intro">#introduction</a>

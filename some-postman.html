@@ -13,90 +13,214 @@
 
     <body>
         
-    <header>
-        <h1>Jeanne Hunneyball</h1>
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <div class="header-main">
+
+                <a href="index.html" class="site-title">
+                    Jeanne Hunneyball
+                </a>
+
+                <nav class="site-nav">
+
+                    <div class="nav-inner">
+
+                        <ul>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="devlog.html">Devlog</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+
     </header>
-        
-    <nav>
-        <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
         
     <div id="content">
         
     <div id="sidebar">
-        <div id="avatar">
-            <img src="images/icon.jpg" alt="Jeanne Hunneyball">
+
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img
+                    src="images/logohex.png"
+                    alt="Jeanne Hunneyball logo"
+                >
+            </a>
         </div>
-        
-        <div id="bio">
-        <h3>Bio</h3>
+
+        <h3>Games Designer</h3>
+
         <p>
-        Game Designer<br>
-        Narrative Designer<br>
-        Developer
+            Narrative design<br>
+            Gameplay systems<br>
+            Player choice
         </p>
 
-        <h3>Focus</h3>
-        <p>
-        Narrative-driven games, interactive storytelling, gameplay systems.
-        </p>
-        </div>
-        
-        <h3>Projects</h3>
-        <ul>
-            <li><a href="reel-feelings.html">Reel Feelings!</a></li>
-            <li><a href="koa-the-lost-realms.html">Koa: The Lost Realms</a></li>
-            <li><a href="shrimpyscroller.html">Shrimpyscroller</a></li>
-            <li><a href="some-postman.html">Some Postman</a></li>
-        </ul>
+        <h3>Tools</h3>
+            <ul>
+                <li>Ren'Py</li>
+                <li>Python</li>
+                <li>Twine</li>
+                <li>Unity</li>
+                <li>Git</li>
+            </ul>
+
+        <h3>Open to</h3>
+            <p>
+                Graduate and junior game design opportunities.
+            </p>
 
         <div class="social-links">
-        <h3>Social Media</h3>
-        <a href="https://www.linkedin.com/in/jeanne-hunneyball-9663741a3/" target="_blank">
-        <img src="images/LinkedIn_icon.svg" alt="LinkedIn Profile"></a>
+            <a href="https://www.linkedin.com/in/jeanne-hunneyball-9663741a3" target="_blank">
+                <img src="images/icon-linkedin.png" alt="LinkedIn Profile">
+            </a>
+            <a href="https://bsky.app/profile/jeannehunneyball.bsky.social" target="_blank">
+                <img src="images/icon-bluesky.png" alt="Bluesky Profile">
+            </a>
+            <a href="https://github.com/jeannehunneyball" target="_blank">
+                <img src="images/icon-github.png" alt="GitHub Profile">
+            </a>
+            <a href="https://jeannehunneyball.itch.io" target="_blank">
+                <img src="images/icon-itchio.svg" alt="Itch io Page">
+            </a>
+
         </div>
 
-    </div>   
+    </div>    
         
     <main>
-        <div class="prose">
+        <div class="page-content">
+
+        <section class="hero">
         
-        <h1>Some Postman</h1>
+            <h1>Some Postman</h1>
 
-        <h2>X Statement</h2>
+            <p class="hero-tagline">
+                <h2>A postman, a pile of love letters, and a very questionable approach to workplace happiness.</h2>
+            </p>
 
-        <iframe
-            width="100%"
-            height="450"
-            src=""
-            title="Some Postman"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+            <p>
+                Some Postman is a short interactive fiction game created in Twine for the My First Game Jam before I started university. Players take on the role of a postman who has discovered that stealing other people's love letters is a surprisingly effective way to improve his own happiness.
+            </p>
 
-        <h2>Razor Statement</h2>
+        </section>
+
+        <section class="project-overview">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                The game was designed as a small experiment in interactive storytelling and player-driven systems. Its deliberately simple premise allowed me to focus on how player choices, variables and consequences could work together to create different outcomes.
+            </p>
+
+            <p class="project-meta">
+                <strong>Role:</strong><br>
+                Game Designer, Narrative Designer, Programmer
+            </p>
+
+            <p class="project-meta">
+                <strong>Tools:</strong><br>
+                Twine, Python, CSS
+            </p>
+
+            <p class="project-meta">
+                <strong>Context:</strong><br>
+                My First Game Jam
+            </p>
+
+            <p class="project-meta">
+                <strong>Format:</strong><br>
+                Short interactive fiction game
+            </p>
+
+        </section>
+
+            <iframe class="project-video">
+                src=""
+                title="Some Postman"
+                allowfullscreen>
+            </iframe>
+
+        <section>
+
+            <h2>Design Approach</h2>
+
+            <p>
+                The core idea was to create a simple decision-making loop where every choice has a cost. Stealing love letters increases the protagonist's happiness, but also increases suspicion, forcing the player to balance the two systems.
+            </p>
+
+            <p>
+                This created a deliberately silly version of a familiar game-design problem: the player wants to maximise one resource without allowing another to become unmanageable.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Systems & Consequences</h2>
+
+            <p>
+                The game's central systems are built around happiness and suspicion. The player's behaviour gradually pushes these variables towards different thresholds, with the resulting state determining what happens to the protagonist.
+            </p>
+
+            <p>
+                The possible outcomes include being promoted and losing the ability to steal letters, being arrested for becoming too suspicious, or losing the job after happiness falls too low. Each ending turns the player's earlier decisions into a consequence rather than simply providing a different piece of dialogue.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Development</h2>
+
+            <p>
+                I built Some Postman in Twine, using its branching structure and variable systems to create the game's interactive flow. Because the project was created in a lightweight web-based format, the finished game can be played directly in a browser as an HTML file.
+            </p>
+
+            <p>
+                Working with Twine gave me an early opportunity to experiment with branching narrative, state tracking and designing consequences around player behaviour.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Reflection</h2>
+
+            <p>
+                Some Postman was one of my first attempts at designing a game around interconnected choices and variables. Although small in scope, it introduced ideas that have continued into my later work, particularly the relationship between player decisions and changing game states.
+            </p>
+
+            <p>
+                The project also helped establish my interest in interactive narrative before I began university. I have since developed these ideas much further through projects such as Shrimpyscroller and Reel Feelings!, where gameplay systems and narrative choices play a much larger role.
+            </p>
+
+        <section>
+            
+            <h2>Play the Game</h2>
+            
+            <p>
+                Some Postman is playable directly in the browser as an HTML game.
+            </p>
+            
+            <ul>
+                <li><a href="https://bernadinesweetspot.neocities.org/Some_Postman">Play Some Postman</a></li>
+                <li><a href="https://bernadinesweetspot.itch.io/some-postman">Source files</a></li>
+            </ul>
         
-        <p>Some Postman is a text-based stealth game developed in Twine in which players take on the role of a postman secretly stealing and reading love letters. The project explores branching narrative design, player choice, and information management through a text-driven gameplay experience.<br>
-        As a solo developer, I was responsible for the entire project, including concept development, writing, game design, implementation, and testing. As my first Twine project, it provided valuable experience in variable-based logic systems, conditional storytelling, and interactive narrative design.<br>
-        The project strengthened my understanding of how gameplay systems and narrative structure can work together to create meaningful player choices within a purely text-based environment.</p>
+        </section>
 
-        <h3>Project Links</h3>
-
-        <ul>
-            <li><a href="https://bernadinesweetspot.itch.io/some-postman">
-                Play on itch.io
-            </a></li>
-
-            <li><a href="">
-                Watch Gameplay Trailer
-            </a></li>
-        </ul>
+        </div>
                 
     </main>
     </div>
