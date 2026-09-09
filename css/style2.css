@@ -5,10 +5,10 @@
   /* Posts */
   --post-bg: #1F2937;
   --post-text: #F9FAFB;
-  --post-header-text: #D4A373;
+  --post-header-text: #7fa6c9;
 
   /* Technical Accent */
-  --dev-accent: #7FA6C9;
+  --dev-accent: #D4A373;
 
   /* Borders */
   --border-color: #374151;
@@ -19,7 +19,7 @@
   --sidebar-bg: #1F2937;
 
   --sidebar-button-bg: #273449;
-  --sidebar-button-bg-hover: #D4A373;
+  --sidebar-button-bg-hover: #7fa6c9;
 
   --sidebar-button-text: #F9FAFB;
   --sidebar-button-text-hover: #111827;
@@ -32,14 +32,14 @@
 
   /* Filter Buttons */
   --button-bg: #273449;
-  --button-bg-hover: #D4A373;
-  --button-bg-selected: #D4A373;
+  --button-bg-hover: #7fa6c9;
+  --button-bg-selected: #7fa6c9;
 
   --button-text: #111827;
   --button-border-color: #374151;
 
   /* Selection */
-  --selected-bg: #D4A373;
+  --selected-bg: #7fa6c9;
   --selected-text: #111827;
 }
 
@@ -462,8 +462,12 @@ footer {
     flex-wrap: nowrap;
     align-items: flex-start;
   }
+  #sidebar .flex {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
 
-  #icon {
+#icon {
     /*shrink the icon a bit to prioritize text on mobile*/
     width: 40%;
     max-width: 40%;
@@ -485,7 +489,10 @@ footer {
     margin-inline: 1em;
   }
   /*this makes the profile text take up more screen-space than the icon image*/
-  #profile {flex: 2;}
+  #profile {
+    flex: 1;
+    min-width: 0;
+  }
   #profile p {
     margin-block: 0;
     margin-left:10px;

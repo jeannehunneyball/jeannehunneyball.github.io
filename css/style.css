@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* ======================
        Colours
@@ -61,9 +69,6 @@ body {
     font-family:
         "Inter",
         system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
         sans-serif;
 
     line-height: 1.6;
@@ -297,15 +302,53 @@ a:hover {
     text-align: center;
 }
 
-.sidebar-logo img {
+.sidebar-logo a {
+    position: relative;
+
     display: block;
 
     width: 120px;
-    max-width: 100%;
+    height: 120px;
 
     margin: 0 auto;
+}
+
+.sidebar-logo img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 120px;
+    height: 120px;
 
     object-fit: contain;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.sidebar-logo .logo-default {
+    opacity: 1;
+}
+
+.sidebar-logo .logo-hover {
+    opacity: 0;
+}
+
+.sidebar-logo a:hover .logo-default {
+    opacity: 0;
+
+    transform: translateY(-3px);
+}
+
+.sidebar-logo a:hover .logo-hover {
+    opacity: 1;
+
+    transform: translateY(-3px);
 }
 
 
@@ -701,17 +744,66 @@ main {
 ====================== */
 
 .project-video {
-    display: block;
+    position: relative;
 
     width: 100%;
-
     aspect-ratio: 16 / 9;
 
     margin: 2rem 0;
 
-    border: none;
+    overflow: hidden;
 
     border-radius: 8px;
+}
+
+.project-video iframe,
+.project-video-thumbnail {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.project-video iframe {
+    border: none;
+}
+
+.project-video-thumbnail {
+    display: none;
+}
+
+.project-video-thumbnail img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.video-play {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 1.5rem;
 }
 
 
@@ -784,6 +876,15 @@ footer {
         margin:
             1rem
             auto;
+    }
+
+    .project-video iframe {
+        display: none;
+    }
+
+    .project-video-thumbnail {
+        display: block;
+        position: relative;
     }
 
 }
