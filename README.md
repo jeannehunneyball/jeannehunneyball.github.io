@@ -19,12 +19,12 @@ The portfolio includes project case studies covering my contributions, developme
 
 Featured projects include:
 
-* **Reel Feelings!** — A narrative visual novel with branching character routes and an original fishing minigame.
-* **Koa: The Lost Realms** — A collaborative puzzle-platformer developed by a large student team.
-* **God of Crabs** — An Unreal Engine narrative walking simulator focused on environmental storytelling, scripted sequences, and atmosphere.
-* **Shrimpyscroller** — A solo Unity shoot-'em-up developed as a Foundation Year final project.
-* **Spare Parts** — A text-based exploration game developed in C#.
-* **Some Postman** — A short narrative game created in Twine.
+* **Reel Feelings!** - A narrative visual novel with branching character routes and an original fishing minigame.
+* **Koa: The Lost Realms** - A collaborative puzzle-platformer developed by a large student team.
+* **God of Crabs** - An Unreal Engine narrative walking simulator focused on environmental storytelling, scripted sequences, and atmosphere.
+* **Shrimpyscroller** - A solo Unity shoot-'em-up developed as a Foundation Year final project.
+* **Spare Parts** - A text-based exploration game developed in C#.
+* **Some Postman** - A short narrative game created in Twine.
 
 ## Website
 
