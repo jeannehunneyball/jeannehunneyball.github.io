@@ -30,7 +30,7 @@ Featured projects include:
 
 The live portfolio can be found at:
 
-**https://hunneyball.games/**
+**https://hunneyball.games/** or 
 **https://jeannehunneyball.github.io/**
 
 ## Technologies
