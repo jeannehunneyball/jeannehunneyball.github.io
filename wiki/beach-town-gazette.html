@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Town Gazette</title>
+    <meta name="author" content="Jeanne Hunneyball">
+    <meta name="description" content="Beach Town Gazette">
+    <link rel="icon" type="image/x-icon" href="../../images/icon_betta.png">
+    <link href="../../css/style5.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+      
+<!--this container makes the columns display correctly on mobile vs desktop-->
+<div class="container">
+    
+    <header id="top">
+        
+        <a href="/beach-town-gazette.html"><img src="../../images/icon_betta.png" alt="Jeanne Hunneyball"></a>
+        <h1>BEACH TOWN GAZETTE</h1>
+
+        <p>extra, extra, read all about it! jeanne hunneyball is here to bring you the news! | this page was last printed <time>15/09/2026</time></p>
+        <!--i like to include a last-updated date on my pages, but you don't have to...-->
+
+        <!--this bit is the white-on-black section-->
+        <p class="inverted">
+            Jeanne Hunneyball is a game designer who's interested in the space between narrative and gameplay. She's the founder of
+            <a href="https://hunneyball.games">Hunneyball Games</a>.
+        </p>
+        <!--link optional... well everything is optional, it's your website-->
+        
+    </header>
+        
+    <nav id="navigation">
+        <span>jump to section:</span>
+        <ul>
+            <li><a href="#issue3">Latest News</a></li>
+            <li><a href="#issue2">template layouts</a></li>
+            <li><a href="#issue1">and another thing</a></li>
+            <li>etc...</li>
+            <li>add as many as you want, and name them whatever you want!</li>
+        </ul>
+    </nav>
+      
+    <main>
+        
+        <!--each "issue" is made as its own article... you can link to them from the navigation above, then people can click to scroll down to earlier sections (i ordered this reverse-chronologically since it's for the web haha)-->
+        <article id="issue3">
+        <!--make sure to write the id without the #, you only need the # in the href part of the navigation cuz it's a link.. this tripped me up when i first started so i wanted to explain it here.-->
+        <h2>Latest News</h2>
+            
+        <div class="columns bordered">
+        <!--the "columns" class splits it into a grid with four columns. you can have sections span different columns by using these classes:
+
+        "col" - ■□□□ (can go anywhere)
+        "left-2col" - ■■□□
+        "middle-2col" - □■■□
+        "right-2col" - □□■■
+        "left-3col" - ■■■□
+        "right-3col" - □■■■
+        "fullwidth" - ■■■■
+
+        i hope this doesn't give people too much trouble, i'm sure there's a way to make it figure out the placement automatically (like flexbox instead of grid) but this is how i made it on my page and i'm too lazy to try to streamline it more than this haha-->
+            
+            <section class="col">
+                <h3>Local News</h3>
+                
+                <h4>BEACH CLEAN-UP RETURNS TO JETTY</h4>
+                <p>
+                    <time>13/09/2026</time>
+                    <br>Volunteers gathered at the jetty this weekend for another community beach clean-up, collecting bottles, fishing line, packaging and other debris from the shoreline.<br>
+                    <br>
+                    Organisers say turnout was “better than expected,” although one volunteer admitted that they had underestimated how much rubbish could fit inside a single shopping trolley.<br>
+                    <br>
+                    The clean-up group plans to return next weekend.<br>
+                    <br>
+                    Residents are encouraged to bring gloves, sensible shoes, and a willingness to complain about whoever keeps leaving plastic near the water.<br>
+                    <br>
+                    “We've been doing this for years,” said one organiser. “You'd think we'd run out of rubbish by now.”<br>
+                    <br>
+                    They have not.
+                </p>
+
+                <h4>PIER RAILING REPAIRED AFTER “MINOR” INCIDENT</h4>
+
+                <p>
+                    <time>11/09/2026</time>
+                    <br>The old railing along the east side of the pier has been repaired following what the council has described as a “minor structural incident.” <br>
+                    <br>
+                    The incident occurred late Tuesday evening when a local resident reportedly leaned against the railing while attempting to retrieve a hat blown into the water. <br><br> The resident was unharmed. <br>
+                    <br>
+                    The hat was not recovered. <br>
+                    <br>
+                    Council workers replaced several sections of the railing on Thursday and have reminded visitors not to climb over safety barriers, lean on damaged structures, or attempt to retrieve personal belongings from the sea. <br>
+                    <br>
+                    “Especially the hats,” one worker added. <br>
+                    <br>
+                    The pier remains open to the public.
+                </p>
+
+                <h4>LOCAL WEATHER</h4>
+                <p>
+                    <time>16/09/26</time>
+                    <br>Sunny.<br>
+                    Then cloudy.
+                    <br>
+                    Then sunny again.
+                    <br>
+                    The weather is refusing to commit.
+                </p>
+            </section>
+            
+            <section class="middle-2col">
+                <h3>Main Stories</h3>
+
+                <h4 class="feature">LOCAL WATERS SHOW FURTHER SIGNS OF CHANGE</h4>
+                <img src="" class="photo" alt="">
+                <p>
+                    <!--i style the time element to look bold with a bullet point, as a preface for the updates i was posting... but you don't need the time element at all, you can change the css to make it a class and put whatever text you want there. maybe i should've done that for you. WELL IT'S TOO LATE NOW i'm sure you can handle it if you really want.-->
+                    <time>15/09/2026</time>
+                    <br>Residents and local fishers have reported another season of unusual changes in the waters around Beach Town, with several long-time visitors noting that familiar species have become harder to spot in areas where they were once common.<br>
+                    <br>
+                    Researchers at the town laboratory say the changes are consistent with patterns they have been monitoring for some time. Recent surveys have recorded alterations to local habitats alongside increased reports of unusual marine behaviour.<br>
+                    <br>
+                    Exactly what is causing the changes remains unclear.<br>
+                    <br>
+                    “There's no single thing we can point to,” one researcher told the Gazette. “We're looking at a combination of factors, and some of these changes have been happening for longer than people realise.”<br>
+                    <br>
+                    For many residents, however, the news comes as little surprise.<br>
+                    <br>
+                    “I've been fishing these waters for years,” said one local angler at the docks. “You notice when things aren't where they're supposed to be.”<br>
+                    <br>
+                    The laboratory has asked residents to report unusual sightings and changes in local wildlife. More information is expected as the latest survey results are reviewed.<br>
+                    <br>
+                    For now, Beach Town's beaches remain open, boats continue to leave the harbour, and the morning fishing crowd has yet to be convinced that anything is particularly unusual.<br>
+                    <br>
+                    “We've always had weird fish,” one café regular said.<br>
+                    <br>
+                    Scientists declined to comment on whether that was technically true.
+                </p>
+
+                <h4 class="feature">CAFÉ REGULARS DIVIDED OVER NEW FISHING REPORT</h4>
+                <img src="" class="photo" alt="">
+                <p>
+                    <!--i style the time element to look bold with a bullet point, as a preface for the updates i was posting... but you don't need the time element at all, you can change the css to make it a class and put whatever text you want there. maybe i should've done that for you. WELL IT'S TOO LATE NOW i'm sure you can handle it if you really want.-->
+                    <time>15/09/2026</time>
+                    <br>The latest reports of unusual fish activity have prompted lively discussion among the regulars at one of Beach Town's most popular cafés. <br>
+                    <br>
+                    Opinions ranged from “probably nothing” to “I've been saying this for years,” with several customers apparently holding both positions at once. <br><br> One fisherman claimed that fish had been behaving differently near the docks for months. <br>
+                    <br> 
+                    “They're just not where they used to be,” he said. “You go out expecting one thing and come back with something completely different.” <br><br> Another regular suggested that the explanation was much simpler. <br><br> “Fish move,” she said. “That's what fish do.” <br>
+                    <br>
+                    A third customer then pointed out that the fisherman in question had once spent twenty minutes looking for his own boat while standing next to it. <br><br> The argument was briefly interrupted when someone spotted a particularly unusual fish through the café window. <br>
+                    <br>
+                    It turned out to be a plastic bag. <br>
+                    <br> The Gazette understands that no conclusions were reached. 
+                </p>
+                
+                <!--i had to make a "pic" class for floating images in the wide columns since i wanted the image width to always be a certain size...-->
+                <div class="pic clearfix">
+                    <h4>LETTERS TO THE EDITOR</h4>
+                    <img src="../images/icon4.png" alt="">
+                    <p>Jeanne answers all your questions about Beach Town and the surrounding locations!</p>
+                    <p><em>“Dear Gazette,
+                    Please stop calling my neighbour's boat ‘the ugly one.’
+                    He knows which boat you mean.<br>
+                    - A concerned resident”</em></p>
+                    <p>Doris this could have been an email.<br>
+                    - Jeanne
+                    </p>
+                </div>
+                
+                <p class="banner">advert for something</p>
+                
+            </section> 
+            
+            <!--i put instructions for the image filter i used here in case other people wanna do the same thing-->
+            <section class="col">
+                <h3>Fishing Report</h3>
+                <h4>FISHERS REPORT CHANGING CATCHES ALONG COAST</h4>
+
+                <p>
+                    <time>14/09/2026</time>
+                    <br>Local anglers are reporting mixed results along the Beach Town coastline this week, with familiar species appearing in some areas while becoming noticeably less common in others. <br>
+                    <br>
+                    The morning boats continue to leave the harbour as usual, although several long-time fishers say they have had to travel farther from shore to find the catches they would normally expect closer to town. <br>
+                    <br>
+                    “You learn the water,” said one fisherman at the docks. “You know where things tend to be.” <br>
+                    <br>
+                    “Lately, you don't always find them there.” <br>
+                    <br>
+                    Researchers at the Beach Town Marine Laboratory say these reports are useful alongside their own surveys, but caution against drawing conclusions from individual fishing trips. <br>
+                    <br>
+                    “Fish populations naturally move and fluctuate,” a laboratory spokesperson said. “What interests us is whether these observations form a consistent pattern over time.” <br>
+                    <br>
+                    Some anglers remain unconcerned. <br>
+                    <br>
+                    “I've had good years and bad years,” said one local. “That's fishing.” <br>
+                    <br>
+                    Others are less convinced. <br>
+                    <br>
+                    “Maybe,” said another. “But I've been fishing here since I was a kid. Something's different.” <br>
+                    <br>
+                    For now, the harbour remains busy and fishing continues as normal. 
+                </p>
+
+                <h4>TOWN LAB REQUESTS VOLUNTEERS FOR MARINE SURVEY</h4>
+
+                <p>
+                    <time>12/09/2026</time>
+                    <br>The Beach Town Marine Laboratory is seeking local volunteers to assist with an ongoing survey of coastal wildlife.<br>
+                    <br>
+                    Participants may be asked to record sightings, report unusual behaviour, or provide information about changes they have noticed in familiar fishing spots.<br>
+                    <br>
+                    No scientific experience is required.<br>
+                    <br>
+                    Residents with extensive opinions about fish are also welcome.<br>
+                    <br>
+                    Researchers stress that the survey is part of a long-term study and that individual reports may not seem significant on their own.<br>
+                    <br>
+                    “Small observations add up,” the laboratory said in a statement.<br>
+                    <br>
+                    Volunteers can register at the laboratory during normal opening hours.
+                </p>
+            </section>
+        </div>
+        </article>
+    
+        <!--this marks a divider between the sections-->
+        <hr>
+            
+        <!--now here's the juicy part! you can copypaste from any of these that you want to use and it'll all be set up for you... i didn't do every possible combination but you get the idea.-->
+        <article id="issue2">
+        <h2>template layouts</h2>
+            
+        <!--btw the "bordered" class puts the grey lines between columns. you can take it out if you don't like the look of it.-->
+        <div class="columns bordered">
+            <section class="col">
+            <h3>column 1</h3>
+                <p>content</p>
+            </section>
+            <section class="col">
+                <h3>column 2</h3>
+                <p>more content</p>
+            </section>
+                <section class="col">
+                <h3>column 3</h3>
+                <p>even more content</p>
+            </section>
+            <section class="col">
+                <h3>column 4</h3>
+                <p>a 4th column of content</p>
+            </section>
+        </div>
+            
+        <p class="banner">you can make a banner that spans the full width of whatever div it's inside, so it can go across the page like this or inside of a column!</p>
+            
+        <div class="columns bordered">
+            <section class="left-2col">
+                <h3>wide column</h3>
+                <p>ooh this is a good place to put a photo</p>
+
+            </section>
+
+            <section class="right-2col">
+                <h3>wide column 2</h3>
+                <p>you could put one over here, too!</p>
+            </section>
+        </div>
+            
+        <hr>
+            
+        <div class="columns bordered">
+        <section class="left-3col">
+            <h3>even wider column</h3>
+            <p>for when it might as well be full width but you want a thing at the side (on desktop anyway)</p>
+    
+        </section>
+            
+        <section class="col">
+            <h3>column 5</h3>
+            <p class="banner">see, this is the banner inside a column like i was telling you about</p>
+        </section>
+        
+        </div>
+        </article>
+        <hr>
+        
+        <article id="issue1" class="fullwidth">
+            <h2>and another thing</h2>
+            <!--hehe, the secret fullwidth class preview...-->
+            <div>
+                <p>just kidding there's nothing else. this page is long enough already... hope you enjoyed my fake article!</p>
+            </div>
+        </article>
+        
+        <!--this link scrolls back up to the top of the page-->
+        <section class="banner end-nav"><a href="#top">return to top</a></section>
+        
+        </main>
+            
+  </div>
+
+    <!--finally we made it to the footer! remove whatever links you don't use, or fill this section with links to other pages on your site-->
+    <footer id="footer" class="inverted">
+        <h4>page credits</h4>
+        <p>image filter: <a href="https://yrlab.zatunen.com/webgl/gbpic/gbpic.html" target="_blank" rel="nofollow">GB pic</a> by yunta_robo</p>
+        <p>site template by <a href="https://nomnomnami.com/" rel="nofollow">NomnomNami</a></p>
+        <h4>site links + info</h4>
+      <a href="https://hunneyball.games">Hunneyball Games</a> |  hosted on <a target="_blank" href="https://github.com/jeannehunneyball/jeannehunneyball.github.io">github pages</a>  | <a target="_blank" href="https://linktr.ee/jeanne.hunney">LinkTree</a>
+        <p>© 2026 Jeanne Hunneyball</p>
+    </footer>    
+    
+  </body>
+  
+</html>
